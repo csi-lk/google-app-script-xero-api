@@ -7,9 +7,24 @@ If you've found yourself here, I hope this saves you some time 😇
 
 ## Explanation
 
+To get the code to work you need to input your `CONSUMER_KEY` and `PEM_KEY` where noted.
+
+_Note: I just needed a quick and dirty solution for this, I know the code can be vastly improved, if you have time feel free to [submit a pull request](https://github.com/Si1kIfY/google-app-script-xero-api/pull/new/master)._
+
 ### code.gs
 
+Is a pretty straightforward read, you need to change:
+
+* Required API `URL` 
+* `payload` (in accordance with [Xero's API docs](https://developer.xero.com/documentation/api/api-overview))
+
+And it should 'just work'
+
 ### jsrsasign.gs
+
+Version `5.0.1` is specifically used as it doesn't use as many external dependencies as the newer versions.
+
+Is used to read the PEM key from string then sign it to send through the oauth process
 
 ## Puzzle Pieces
 
